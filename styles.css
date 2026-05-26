@@ -143,29 +143,59 @@ em.clay { font-family: var(--serif); font-style: italic; color: var(--clay); }
 .nav__brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  gap: 14px;
+  text-decoration: none;
 }
 .nav__mark {
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   display: grid;
   place-items: center;
-  flex: 0 0 32px;
+  flex: 0 0 38px;
+  transition: transform 380ms var(--ease);
 }
-.nav__brand b { font-weight: 500; }
+.nav__brand:hover .nav__mark { transform: rotate(-8deg) scale(1.06); }
+.nav__mark svg { width: 38px; height: 38px; }
+
+.nav__brand-text,
+.nav__brand > span:not(.nav__mark) {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  gap: 7px;
+}
+.nav__brand em {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  line-height: 0.92;
+  font-feature-settings: "ss01" 1, "calt" 1;
+  position: relative;
+  padding-right: 8px;
+}
+.nav__brand em::after {
+  content: '.';
+  position: absolute;
+  right: -2px;
+  bottom: 0;
+  color: var(--brass);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.05em;
+  line-height: 0.92;
+}
 .nav__brand small {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-size: 9px;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--brass);
-  display: block;
+  color: var(--slate);
   line-height: 1;
-  margin-top: 2px;
+  font-weight: 500;
 }
 .nav__links {
   display: flex;
@@ -911,11 +941,23 @@ em.clay { font-family: var(--serif); font-style: italic; color: var(--clay); }
 }
 .footer__brand {
   font-family: var(--serif);
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin-bottom: 14px;
+  font-size: 44px;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  margin-bottom: 16px;
   font-weight: 300;
+  display: inline-block;
+}
+.footer__brand em {
+  font-style: italic;
+  font-weight: 300;
+}
+.footer__brand em::after {
+  content: '.';
+  color: var(--brass);
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 1px;
 }
 .footer__tagline {
   color: rgba(244, 239, 230, 0.6);
