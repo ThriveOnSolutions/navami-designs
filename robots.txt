@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /signin.html
+Disallow: /signup.html
+Disallow: /unsubscribe.html
+
+Sitemap: https://thenavami.com/sitemap.xml
