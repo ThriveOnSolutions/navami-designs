@@ -4,19 +4,19 @@
    ========================================================= */
 
 :root {
-  /* color */
-  --ink: #16110D;
-  --ink-soft: #2A211B;
-  --bone: #F4EFE6;
-  --paper: #FAF7F1;
-  --smoke: #E8E0D2;
-  --line: #D9CFBC;
-  --brass: #B68A4E;
-  --brass-dark: #8E6A35;
-  --clay: #B85A3C;
-  --clay-dark: #8E4128;
+  /* color — Carbon · Limestone · Moss · Terracotta · Slate */
+  --ink: #14161A;
+  --ink-soft: #22252B;
+  --bone: #ECE7DC;
+  --paper: #F5F1E6;
+  --smoke: #D8D1BD;
+  --line: #C7BFAA;
+  --brass: #6E7C50;
+  --brass-dark: #4F5C37;
+  --clay: #A8553A;
+  --clay-dark: #7E3D29;
   --sage: #5F7561;
-  --slate: #6B6259;
+  --slate: #5E5B55;
   --white: #FFFFFF;
 
   /* type */
